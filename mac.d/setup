@@ -1,0 +1,27 @@
+# vim: ft=sh
+
+SUBCOMMAND_DESC="Help setup your mac"
+SUBCOMMAND_HELP=$(cat <<EOH
+apps          Install apps.
+preferences   Setup you preferences.
+EOH
+)
+
+function install_apps() {
+  in_cyan "Installing apps..."
+  use apps
+}
+
+function setup_preferences() {
+  in_cyan "Setting up preferences..."
+  use preferences
+}
+
+case ${1} in
+  apps)
+    install_apps
+  ;;
+  preferences)
+    setup_preferences
+  ;;
+esac

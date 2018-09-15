@@ -1,0 +1,32 @@
+#!/usr/bin/env bash
+
+set -euf -o pipefail
+
+function cask() {
+  brew cask install $1
+}
+
+function formula() {
+  brew install $1
+}
+
+brew tap homebrew/cask-versions
+
+cask google-chrome
+cask dropbox
+cask flycut
+cask docker
+cask spotify
+cask quicksilver
+cask 1password6
+cask sync
+cask google-cloud-sdk
+cask docker
+cask iterm2
+cask visual-studio-code
+cask zoomus
+cask gpg-suite
+
+formula kubectl
+formula git-crypt
+formula bash
