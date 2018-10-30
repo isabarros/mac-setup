@@ -12,21 +12,14 @@ function formula() {
 
 brew tap homebrew/cask-versions
 
+cask lastpass
+cask caffeine
+cask jumpcut
+cask spectacle
 cask google-chrome
-cask dropbox
-cask flycut
-cask docker
 cask spotify
-cask quicksilver
-cask 1password6
-cask sync
-cask google-cloud-sdk
-cask docker
-cask iterm2
-cask visual-studio-code
 cask zoomus
+cask iterm2
+cask postman
+cask docker
 cask gpg-suite
-
-formula kubectl
-formula git-crypt
-formula bash
